@@ -12,7 +12,7 @@
     <div class="col-md-6">
         <h2>{{ product.name }}</h2>
         <p class="text-muted">Añadido el {{ product.created_at|date:"d/m/Y" }}</p>
-        <h3 class="text-primary">${{ product.price }}</h3>
+        <h3 class="text-primary">S/{{ product.price }}</h3>
         <p class="mt-4">{{ product.description }}</p>
         <a href="{% url 'product_list' %}" class="btn btn-secondary">Volver a la lista</a>
     </div>
